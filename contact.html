@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>BrewNex Coffee Makers</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Francois+One&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src ="images/banner.jpeg" alt="company banner " class ="banner" >
+        </header>
+        <nav>
+            <a href="index.html" class="logo"> <img src="images/logo.png" alt="company logo"></a>
+            <ul class="nav-link"> 
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="specials.html">Specials</a></li>
+                <li><a href="training.html">Training</a></li>
+                <li><a href="media.html">Media</a></li>
+                <li><a href="faqs.html">FAQs</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="menu-toggle">
+                &#9776;
+            </div>
+        </nav>
+       
+        <main>
+            <h1>Contact BrewNex</h1>
+            <ul>
+                <li>Please fill out the form below to get in touch with us.</li>
+                <li>All fields marked with <span class="asterisk">*</span> are required.</li>
+                <li>Choose the nature of your enquiry carefully so we can respond faster.</li>
+            </ul>
+    
+            <form action="contact.php" method="post">
+                <fieldset>
+                    <legend>🧍 Personal Information</legend>
+                    <label for="fullname">Full Name<span class="asterisk">*</span></label>
+                    <input type="text" id="fullname" name="fullname" required autofocus placeholder="John Doe">
+    
+                    <label for="email">Email Address<span class="asterisk">*</span>:</label>
+                    <input type="email" id="email" name="email" required placeholder="example@domain.com">
+    
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob">
+                </fieldset>
+    
+                <fieldset>
+                    <legend>📞 Contact Details</legend>
+                    <label for="phone">Phone Number<span class="asterisk">*</span>:</label>
+                    <input type="tel" id="phone" name="phone" required placeholder="(123) 456-7890">
+    
+                    <label for="city">City:</label>
+                    <input type="text" id="city" name="city" placeholder="Toronto">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Preferred Contact Method<span class="asterisk">*</span>:</legend><br>
+                    <input type="radio" id="contact-email" name="contact_method" value="email" required>
+                    <label for="contact-email">Email</label><br>
+                    <input type="radio" id="contact-phone" name="contact_method" value="phone">
+                    <label for="contact-phone">Phone</label><br>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Topic of Interest<span class="asterisk">*</span>:</legend><br>
+                    <input type="checkbox" id="product" name="interest" value="Product Info">
+                    <label for="product">Product Info</label><br>
+                    <input type="checkbox" id="partnership" name="interest" value="Partnerships">
+                    <label for="partnership">Partnerships</label><br>
+                    <input type="checkbox" id="training" name="interest" value="Training">
+                    <label for="training">Training</label>
+                </fieldset>
+    
+                <fieldset>
+                    <legend>📝 Additional Details</legend>
+                    <label for="comments">Comments or Questions<span class="asterisk">*</span>:</label>
+                    <textarea id="comments" name="comments" rows="4" cols="40" required placeholder="Type your message here..."></textarea>
+    
+                    <label for="enquiry">Type of Enquiry<span class="asterisk">*</span>:</label>
+                    <select id="enquiry" name="enquiry" required>
+                        <option value="">-- Please Select --</option>
+                        <option value="general">General Inquiry</option>
+                        <option value="feedback">Feedback</option>
+                        <option value="support">Customer Support</option>
+                        <option value="careers">Careers</option>
+                    </select>
+                </fieldset>
+    
+                <div >
+                    <button type="submit">Submit </button>
+                    <button type="reset">Reset</button>
+                </div>
+            </form>
+        </main>
+
+
+        <footer>
+            <p>&copy; Copyright 2021 BrewNex. All Rights Reserved.</p>
+            <p>Created by Shobhit &nbsp; | &nbsp; Student ID: c0959381</p>
+            <a href="mailto:info@BrewNex.com">Request Information</a>
+          </footer>
+        </main>
+    </div>
+    
+</body>
+</html>
