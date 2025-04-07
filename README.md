@@ -1,5 +1,8 @@
 # ☕ BrewNex Coffee Makers
 
+![image alt](https://github.com/LCSW2515/LCSW2515.github.io/blob/main/websitess.png?raw=true)
+
+
 A sleek, responsive website built to showcase premium coffee machines with style and simplicity.
 
 🚀 **Live Demo:** https://lcsw2515.github.io/contact.html  
