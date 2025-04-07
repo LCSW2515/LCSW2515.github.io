@@ -18,3 +18,4 @@ A sleek, responsive website built to showcase premium coffee machines with style
 - Interactive product showcase
 - Clean, modern UI design
 
+# Author : Shobhit
