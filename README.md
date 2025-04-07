@@ -1,5 +1,5 @@
 # ☕  BrewNex Coffee Makers
-# 🧑‍💼 Author : Shobhit
+
 
 ![image alt](https://github.com/LCSW2515/LCSW2515.github.io/blob/main/websitess.png?raw=true)
 
@@ -18,5 +18,8 @@ A sleek, responsive website built to showcase premium coffee machines with style
 - Responsive layout across devices
 - Interactive product showcase
 - Clean, modern UI design
+
+
+ # 🧑‍💼 Author : Shobhit 
 
 
