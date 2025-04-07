@@ -26,3 +26,23 @@ function setFavicon(url) {
 window.onload = function() {
     setFavicon("images/fav-icon.png"); 
 };
+
+document.addEventListener("DOMContentLoaded", function () {
+    const form = document.querySelector("form");
+    const successMessage = document.getElementById("success-message");
+
+form.addEventListener("submit", function (event) {
+    event.preventDefault(); 
+
+    
+    form.style.display = "none";
+    
+    successMessage.style.display = "block";
+
+    setTimeout(() => {
+        successMessage.style.display = "none";
+        form.style.display = "block";
+        form.reset(); 
+    }, 4000);
+});
+});

@@ -3,6 +3,7 @@ body {
     font-family: "Francois One", sans-serif;
     margin: 0;
     padding: 0;
+    font-size: 1.1em;
 }
 
 .container {
@@ -10,22 +11,28 @@ body {
     margin: 0 auto;
 }
 
-header {
-    background-color: #743e221c;
-    text-align: center;
-    padding: 0.5em;
-    border-radius: 5px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
-    margin-top: 0.5em;
-    margin-bottom: 1em;
-    box-shadow: 10px 10px 5px;
+a {
+    text-decoration: none;
 }
 
-.banner {
+header img {
+  border-radius: 5px;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+}
+
+ .banner {
     max-width: 100%;
     height: auto;
-    border-radius: 5px;
-    margin-top: 0.4em;
+    border-radius: 15px;
+    margin-top: 0.3em;
+    box-shadow: 0px 0px 19px black;
+} 
+
+.banner:hover {
+    transform: scale(1.01);
+    transition: transform 1s ease;
+    box-shadow: 0px 0px 20px red;
 }
 
 nav {
@@ -35,20 +42,28 @@ nav {
     background-color: #743e221c;
     padding: 15px;
     position: relative;
-    border-radius: 5px;
+    z-index: 10;
+    border-radius: 15px;
     font-size: 1.4em;
-    box-shadow: 10px 10px 5px;
+    box-shadow: 8px 7px 11px;
 }
 
 nav .logo img {
     height: 5em;
     width: 5em;
+    border-radius: 50%;
+    transition: box-shadow 0.3s ease;
+}
+
+nav .logo img:hover {
+    filter: drop-shadow(0 0 18px rgb(246, 5, 5));
 }
 
 .nav-link {
     list-style: none;
     display: flex;
     gap: 15px;
+    z-index: 9998;
 }
 
 .nav-link li {
@@ -79,6 +94,7 @@ nav .logo img {
     font-size: 30px;
     color: black;
     cursor: pointer;
+    z-index: 9999;
 }
 
 main {
@@ -90,14 +106,25 @@ main {
 main img {
     border-radius: 0.6em;
     margin-top: 1em;
+    box-shadow: 0px 0px 18px #000;
 }
-
 
 main img:hover {
     transform: scale(1.05);
     transition: transform 1s ease;
     cursor: pointer;
-    box-shadow: 10px 10px 5px;
+    box-shadow: 0px 0px 18px red;
+}
+
+.guarantee-img {
+    box-shadow: none !important;
+}
+
+.guarantee-img:hover{
+    border-radius: 50%;
+    transition: transform 1s ease ;
+    filter: drop-shadow(0 8px 16px red);
+    box-shadow: none !important;
 }
 
 h1 {
@@ -126,7 +153,6 @@ h2 {
 
 ul {
     list-style: none;
-    
 }
 
 h1 span {
@@ -148,15 +174,6 @@ video {
 strong {
     font-size: 1.3em;
 }
-
-/* section p {
-    background-color: #fff3e6;
-    border: 1px solid #d9b89c;
-    border-radius: 4px;
-    padding: 10px;
-    margin-bottom: 5px;
-    transition: background-color 0.3s;
-} */
 
 .why-should-you-choose-us ol {
     list-style-type: none; 
@@ -185,7 +202,6 @@ strong {
     margin: 0;
     
 }
-
 
 figcaption {
     font-size: 1.1em;
@@ -233,6 +249,21 @@ h3:hover {
     transition: color 0.3s ease-in-out;
 }
 
+h2:hover {
+    color: red; 
+    transition: color 0.3s ease-in-out;
+}
+
+h1 {
+    transition: color 0.3s ease, transform 0.3s ease, text-shadow 0.3s ease;
+}
+  
+h1:hover {
+    color: white; 
+    transform: scale(1.05);
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.6); 
+}
+  
 footer {
     text-align: center;
     font-size: 0.8em;
@@ -282,7 +313,6 @@ tr:hover {
    background-color: #e08c4f; 
 }
 
-
 legend {
     font-size: 1.3rem;
     font-weight: bold;
@@ -299,11 +329,14 @@ legend {
     color: red;
 }
 
-
 form{
     flex-direction: column;
     display: flex;
     flex-wrap: wrap;
+    margin: 0 auto; 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
 fieldset{
@@ -311,10 +344,8 @@ fieldset{
     padding: 15px;
     margin-bottom: 15px;
     border-radius: 5px;
-    width: 100%;
     box-sizing: border-box;
 }
-
 
 legend{
     font-weight: bold;
@@ -349,9 +380,9 @@ input[type="radio"],input[type="checkbox"]{
 }
 
 button{
-    width: 25%;
+    width: 30%;
     padding: 10px;
-    background-color: #2bd439;
+    background-color: #a37f58;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -361,27 +392,22 @@ button{
 }
 
 button:hover{
-    background-color: #0a1130;
+    background-color: green;
     border-radius: 5px;
     color: white;
-    box-shadow: 0px 0px 10px black;
+    box-shadow: 0px 0px 10px green;
 }
-
-
 
 button[type="reset"]{
     background-color: #d42b2b;
 }
 
 button[type="reset"]:hover {
-    background-color: #0a1130;
+    background-color: #7f3ff6;
     border-radius: 5px;
     color: white;
-    box-shadow: 0px 0px 10px black;
-
+    box-shadow: 0px 0px 18px #7f3ff6;
 }
-
-
 
 article {
     display: flex;
@@ -391,9 +417,6 @@ article {
     margin-bottom: 20px;
 }
 
-
-
-
 @media screen and (max-width: 1024px) {
 
     .container {
@@ -401,13 +424,29 @@ article {
     }
 
     nav{
-        font-size: 0.9em;
+        font-size: 1em;
     }
 
+    .nav-link {
+        gap: 8px;
+    }
+
+    caption {
+        font-size: 1.1em;
+    }
+
+    form {
+        width: 80%;
+    }
+
+    legend {
+        font-size: 1em;
+    }
 
 }  
 
 @media screen and (min-width: 1024px) {
+
     body {
         justify-content: center;
         align-items: center;
@@ -421,7 +460,7 @@ article {
     }
 
     form {
-        width: 60%;
+        width: 50%;
         margin: 0 auto; 
         padding: 20px;
         border-radius: 8px;
@@ -432,18 +471,20 @@ article {
         margin-bottom: 20px;
     }
 
-}
+    .specials ul li {
+        width: 96%;
+    }
 
+}
 
 @media screen and (max-width: 767px) {
 
- 
     .nav-link {
         display: none;
         flex-direction: column;
         width: 100%;
         position: absolute;
-        top: 60px;
+        top: -1em;
         left: 0;
         background-color: rgb(252, 233, 208);;
         padding: 10px 0;
@@ -475,6 +516,31 @@ article {
         font-size: 12px;
         padding: 15px;
     }
+
+    h1 {
+        font-size: 1.2em;
+    }
+
+    h2 {
+        font-size: 0.9em;
+    }
+
+    h3 {
+        font-size: 1.1em;
+    }
+
+    figcaption {
+        font-size: 0.9em;
+    }
+
+    .faqs {
+        font-size: 0.9em;
+    }
+
+    p span  {
+        font-size: 1.1em;
+    }
+
 }
 
 @media screen and (max-width: 445px){
@@ -482,9 +548,16 @@ article {
     table {
        font-size: 0.8em;
     }
+
 }
 
-
+.faqs {
+    padding-left: 0;
+    background-color: #fff3e6;
+    border: 1px solid #d9b89c;
+    padding: 10px;
+    margin-bottom: 5px
+}
 
 .specials li {
     background-color: #fff3e6; 
@@ -493,8 +566,134 @@ article {
     padding: 10px; 
     margin-bottom: 5px; 
     transition: background-color 0.3s; 
+    width: 90%;
 }
 
 .specials li:hover {
     background-color: #ffe6cc;
 }
+
+form {
+    position: relative;
+    z-index: 1;
+    background-image: url('/images/form-bck.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+    box-shadow: 0px 0px 12px black;
+    margin-top: 1.2em;
+}
+
+audio {
+    width: 100%;
+    max-width: 500px;
+    height: 40px;
+    border-radius: 2em;
+    padding: 4px;
+    background-color: black;
+    display: block;
+    margin: 10px auto;
+    box-shadow: 0px 0px 0.4rem black;
+    margin-top: 1.5em;
+
+}
+
+  audio::-webkit-media-controls-panel {
+    background-color: rgb(252, 233, 208);
+    border-radius: 2em;
+}
+
+ audio:hover {
+    box-shadow: 0px 0px 1rem red;
+} 
+
+ video {
+    margin-top: 1rem;
+    box-shadow: 0px 0px 1rem black;
+    border-radius: 1.6rem;
+    width: 70%;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+ video:hover {
+    transform: scale(1.05) rotate3d(1, 1, 0, 5deg);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3), 0 0 20px red;
+    cursor: pointer;
+}
+
+#success-message {
+    display: none; 
+    color: #155724;
+    font-weight: bold;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    animation: fadeIn 0.5s ease-in-out forwards;
+    margin-top: 2em;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-5px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+em {
+    color: #6F4E37;
+}
+  
+.join-club {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    margin-top: 1.5em;
+    padding: 1.5em;
+    background-color: #fdfaf6; 
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin-inline: auto; 
+    position: relative;
+    z-index: 1;
+    background-image: url('/images/coffee-illustration-poster-powerpoint-background_a045a40d92__960_540.avif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+    box-shadow: 0px 0px 12px black;
+    margin-top: 1.2em;
+  }
+  
+  .join-club label {
+    font-size: 1rem;
+    font-weight: bold;
+    color: red; 
+  }
+  
+  .subscribe-field {
+    width: 100%;
+    padding: 0.7em;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    box-sizing: border-box;
+  }
+  
+  .subscribe-btn {
+    width: 40%;
+    font-size: 1rem;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  
+  

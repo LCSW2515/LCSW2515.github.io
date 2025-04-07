@@ -31,7 +31,7 @@
         </nav>
        
         <main>
-            <h1>📱 Drop Us a Message, Coffee’s on Us!</h1>
+            <h1>📱 Drop Us a Message, <em>Coffee’s ☕ on Us!</em></h1>
             <ul>
                 <li>Please fill out the form below to get in touch with us.</li>
                 <li>All fields marked with <span class="asterisk">*</span> are required.</li>
@@ -44,16 +44,16 @@
                     <label for="fullname">Full Name<span class="asterisk">*</span></label>
                     <input type="text" id="fullname" name="fullname" required autofocus placeholder="John Doe">
     
-                    <label for="email">Email Address<span class="asterisk">*</span>:</label>
+                    <label for="email">Email Address<span class="asterisk">*</span></label>
                     <input type="email" id="email" name="email" required placeholder="example@domain.com">
     
-                    <label for="dob">Date of Birth:</label>
+                    <label for="dob">Date of Birth</label>
                     <input type="date" id="dob" name="dob">
                 </fieldset>
     
                 <fieldset>
                     <legend>📞 Contact Details</legend>
-                    <label for="phone">Phone Number<span class="asterisk">*</span>:</label>
+                    <label for="phone">Phone Number<span class="asterisk">*</span></label>
                     <input type="tel" id="phone" name="phone" required placeholder="(123) 456-7890">
     
                     <label for="city">City:</label>
@@ -61,7 +61,7 @@
                 </fieldset>
 
                 <fieldset>
-                    <legend>Preferred Contact Method<span class="asterisk">*</span>:</legend><br>
+                    <legend>Preferred Contact Method<span class="asterisk">*</span></legend><br>
                     <input type="radio" id="contact-email" name="contact_method" value="email" required>
                     <label for="contact-email">Email</label><br>
                     <input type="radio" id="contact-phone" name="contact_method" value="phone">
@@ -69,7 +69,7 @@
                 </fieldset>
 
                 <fieldset>
-                    <legend>Topic of Interest<span class="asterisk">*</span>:</legend><br>
+                    <legend>Topic of Interest<span class="asterisk">*</span></legend><br>
                     <input type="checkbox" id="product" name="interest" value="Product Info">
                     <label for="product">Product Info</label><br>
                     <input type="checkbox" id="partnership" name="interest" value="Partnerships">
@@ -80,10 +80,10 @@
     
                 <fieldset>
                     <legend>📝 Additional Details</legend>
-                    <label for="comments">Comments or Questions<span class="asterisk">*</span>:</label>
+                    <label for="comments">Comments or Questions<span class="asterisk">*</span></label>
                     <textarea id="comments" name="comments" rows="4" cols="40" required placeholder="Type your message here..."></textarea>
     
-                    <label for="enquiry">Type of Enquiry<span class="asterisk">*</span>:</label>
+                    <label for="enquiry">Type of Enquiry<span class="asterisk">*</span></label>
                     <select id="enquiry" name="enquiry" required>
                         <option value="">-- Please Select --</option>
                         <option value="general">General Inquiry</option>
@@ -98,6 +98,10 @@
                     <button type="reset">Reset</button>
                 </div>
             </form>
+            <div id="success-message">
+                ✅ Form submitted successfully!
+            </div>
+            
         </main>
 
 

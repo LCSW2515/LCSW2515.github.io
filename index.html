@@ -38,7 +38,7 @@
       </nav>
 
       <main>
-        <h1>Welcome to BrewNex Coffee Makers! ☕ ✨</h1>
+        <h1>Welcome to <em>BrewNex</em> Coffee Makers! ☕ ✨</h1>
         <p>
           Your perfect cup of coffee starts here! Discover our range of coffee
           makers designed for every need!
@@ -58,6 +58,30 @@
           width="450px"
           alt="welcome-image"
         />
+
+
+        <section>
+          <h2>🎯 Brewing Tips</h2>
+          <ul>
+            <li>Use fresh, filtered water for the best flavor.</li>
+            <li>Grind your beans just before brewing.</li>
+            <li>Clean your machine weekly to avoid buildup.</li>
+          </ul>
+        </section>
+        
+        <section>
+          <h2>👥 Join Our Coffee Club</h2>
+          <p>Stay in the loop with BrewNex exclusives</p>
+           <p><strong>Enter your email to enjoy members-only <span>perks and updates!</span> </strong> ✨</p>
+          <p id="success-message">
+             ✅ Successfully subscribed for tips, offers, and coffee love!
+          </p>
+          <form action="subscribe.php" method="post" class="join-club">
+            <label for="email">Email<span class="asterisk">*</span</label>
+            <input class="subscribe-field" type="email" id="email" name="email" placeholder="you@example.com" required />
+            <button class="subscribe-btn" type="submit">Subscribe</button>
+          </form>
+        </section>
 
         <footer>
           <p>&copy; Copyright 2021 BrewNex. All Rights Reserved.</p>
