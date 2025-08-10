@@ -10,6 +10,8 @@
     />
     <link rel="stylesheet" href="css/style.css" />
     <script src="js/script.js" defer></script>
+    <script src="js/theme-toggle.js" defer></script>
+
   </head>
   <body>
     <div class="container">
@@ -21,6 +23,13 @@
           <img src="images/logo.png" alt="company logo"
         /></a>
         <ul class="nav-link">
+          <div id="dark-mode-toggle" style="position: absolute; top: 10px; right: 20px; display: flex; align-items: center; gap: 8px;">
+            <label for="dark-theme-switch" style="cursor: pointer; color: #6b4226;">Dark Mode</label>
+            <label class="switch">
+              <input type="checkbox" id="dark-theme-switch" />
+              <span class="slider round"></span>
+            </label>
+        </div>
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="team.html">Team</a></li>
@@ -32,8 +41,9 @@
           <li><a href="task-manager.html">Task Manager</a></li>
           <li><a href="kanban.html">Kanban Board</a></li>
           <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="profile.html">Profile</a></li>
           <li><a href="faqs.html">FAQs</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
         </ul>
         <div class="menu-toggle">&#9776;</div>
       </nav>

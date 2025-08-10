@@ -140,15 +140,18 @@ document.addEventListener("DOMContentLoaded", function () {
         e.preventDefault();
 
         if (validateRegister()) {
-          // Save or clear remembered data based on checkbox
-          if (rememberMe.checked) {
-            localStorage.setItem("rememberedUsername", username.value);
-            localStorage.setItem("rememberedEmail", email.value);
-          } else {
-            localStorage.removeItem("rememberedUsername");
-            localStorage.removeItem("rememberedEmail");
+          // Always store username and password for profile login
+          localStorage.setItem("rememberedUsername", username.value);
+          localStorage.setItem("registeredPassword", password.value);
+      
+          // (Optional) still save email if needed for other pages
+          localStorage.setItem("rememberedEmail", email.value);
+      
+          // Handle Remember Me checkbox
+          if (!rememberMe.checked) {
+              localStorage.removeItem("rememberedEmail");
           }
-
+      
           // Show success message
           successMessage.style.display = "block";
 
@@ -318,3 +321,4 @@ document.addEventListener('DOMContentLoaded', function() {
   // Initial render on page load
   renderKanbanTasks();
 });
+
