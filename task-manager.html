@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Task Manager - BrewNex Coffee Makers</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Francois+One&family=Roboto+Slab:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/task-manager.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="images/banner.jpeg" alt="company banner" class="banner" />
+        </header>
+        <nav>
+            <a href="index.html" class="logo"><img src="images/logo.png" alt="company logo" /></a>
+            <ul class="nav-link">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="specials.html">Specials</a></li>
+                <li><a href="training.html">Training</a></li>
+                <li><a href="media.html">Media</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="task-manager.html">Task Manager</a></li>
+                <li><a href="kanban.html">Kanban Board</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="faqs.html">FAQs</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h1>☕ BrewNex Task Tracker</h1>
+            <form id="task-form">
+                <fieldset>
+                    <legend>Create or Edit a Task</legend>
+
+                    <!-- hidden input to store task id when editing -->
+                    <input type="hidden" id="task-id" />
+
+                    <label for="task-title">Task Title<span class="asterisk">*</span></label>
+                    <input type="text" id="task-title" name="task-title" required placeholder="Enter task title" />
+
+                    <label for="task-description">Description</label>
+                    <textarea
+                      id="task-description"
+                      name="task-description"
+                      rows="4"
+                      placeholder="Enter task description"
+                    ></textarea>
+
+                    <label for="task-priority">Priority<span class="asterisk">*</span></label>
+                    <select id="task-priority" name="task-priority" required>
+                        <option value="">-- Select Priority --</option>
+                        <option value="high">High</option>
+                        <option value="medium">Medium</option>
+                        <option value="low">Low</option>
+                    </select>
+
+                    <label for="task-status">Status<span class="asterisk">*</span></label>
+                    <select id="task-status" name="task-status" required>
+                      <option value="">-- Select Priority --</option>
+                      <option value="Roasting Stage">Roasting Stage </option>
+                      <option value="Brewing Stage">Brewing Stage</option>
+                      <option value="Served & Enjoyed">Served & Enjoyed</option>
+                    </select>
+
+                    <label for="task-created-date">Created Date<span class="asterisk">*</span></label>
+                    <input type="date" id="task-created-date" name="task-created-date" required />
+
+                    <label for="task-due-date">Due Date<span class="asterisk">*</span></label>
+                    <input type="date" id="task-due-date" name="task-due-date" required />
+
+                    <label for="task-tags">Tags (comma separated)</label>
+                    <input type="text" id="task-tags" name="task-tags" placeholder="e.g., maintenance, espresso" />
+                </fieldset>
+                <div style="margin-top: 10px;">
+                  <button  type="submit" id="save-task-btn">Add Task</button>
+                  <button type="button" id="clear-form-btn" style="background:#999; margin-left: 10px;">Clear Form</button>
+                </div>
+            </form>
+            <div id="task-success-message" style="display:none; margin-top:10px; color:green;">
+              ✅ Task saved successfully!
+            </div>
+            <div id="task-error-message" style="display:none; margin-top:10px; color:red;">
+              ⚠️ Please fill out all required fields correctly.
+            </div>
+
+
+            <section>
+                <h2>🌟 Tasks List - Added Tasks will be shown below</h2>
+                <div id="tasks-list"></div>
+            </section>
+
+
+            <button id="export-tasks-btn" class="reg-btn" style="background:#444; color:#fff;">
+                Export All Tasks as JSON
+            </button>
+        </main>
+        <footer>
+            <p>&copy; Copyright 2021 BrewNex. All Rights Reserved.</p>
+            <p>Created by Shobhit &nbsp; | &nbsp; Student ID: c0959381</p>
+            <a href="mailto:info@BrewNex.com">Request Information</a>  
+        </footer>
+    </div>
+</body>
+</html>

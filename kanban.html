@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Kanban Board - BrewNex Coffee Makers</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Francois+One&family=Roboto+Slab:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="images/banner.jpeg" alt="company banner" class="banner">
+        </header>
+
+        <nav>
+            <a href="index.html" class="logo"><img src="images/logo.png" alt="company logo"></a>
+            <ul class="nav-link">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="specials.html">Specials</a></li>
+                <li><a href="training.html">Training</a></li>
+                <li><a href="media.html">Media</a></li>
+                
+                <li><a href="register.html">Register</a></li>
+                <li><a href="task-manager.html">Task Manager</a></li>
+                <li><a href="kanban.html">Kanban Board</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="faqs.html">FAQs</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <h1>☕ BrewNex Task Board</h1>
+            <p>Keep track of our coffee journey from raw beans to the perfect brew! <span>Drag & Drop</span> tasks between stages to keep the coffee flowing.</p>
+            <p><span>Add your tasks in Task Manger page to update status in real time!</span></p>
+            
+            <div class="kanban-container">
+                <div class="kanban-column" data-status="high" id="todo">
+                    <h2>Roasting Stage 🔥</h2>
+                    <div class="kanban-task" draggable="true">Source premium Arabica beans</div>
+                    <div class="kanban-task" draggable="true">Preheat roasting machine</div>
+                    <div class="kanban-task" draggable="true">Experiment with new roast profile</div>
+                </div>
+
+                <div class="kanban-column" data-status="medium" id="in-progress">
+                    <h2>Brewing Stage ☕</h2>
+                    <div class="kanban-task" draggable="true">Brew Caramel Macchiato order</div>
+                    <div class="kanban-task" draggable="true">Prepare Cold Brew batch</div>
+                </div>
+
+                <div class="kanban-column" data-status="low" id="done">
+                    <h2>Served & Enjoyed 🥳</h2>
+                    <div class="kanban-task" draggable="true">Delivered Espresso to customer</div>
+                    <div class="kanban-task" draggable="true">Completed Latte Art Training</div>
+                </div>
+            </div>
+
+            <section style="margin-top: 2em;">
+                <h2>Why We Use Kanban at BrewNex</h2>
+                <p>Our Kanban board helps us visualize our coffee-making process — from sourcing beans to serving the final cup — so every step is smooth and every customer gets the freshest brew possible.</p>
+                <ul>
+                    <li>📌 **Track roasting schedules** to avoid over-roasting.</li>
+                    <li>📌 **Manage brewing tasks** for special orders and events.</li>
+                    <li>📌 **Celebrate completed brews** and customer feedback.</li>
+                </ul>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; Copyright 2025 BrewNex. All Rights Reserved.</p>
+            <p>Created by Shobhit &nbsp; | &nbsp; Student ID: c0959381</p>
+            <a href="mailto:info@BrewNex.com">Request Information</a>  
+        </footer>
+    </div>
+</body>
+</html>

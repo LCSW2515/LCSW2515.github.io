@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Register - BrewNex Coffee Makers</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Francois+One&family=Roboto+Slab:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="images/banner.jpeg" alt="company banner" class="banner">
+        </header>
+        <nav>
+            <a href="index.html" class="logo"><img src="images/logo.png" alt="company logo"></a>
+            <ul class="nav-link">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="specials.html">Specials</a></li>
+                <li><a href="training.html">Training</a></li>
+                <li><a href="media.html">Media</a></li>
+                
+                <li><a href="register.html">Register</a></li>
+                <li><a href="task-manager.html">Task Manager</a></li>
+                <li><a href="kanban.html">Kanban Board</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="faqs.html">FAQs</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h1>✍️ BrewNex Register Form</h1>
+            <form id="registration-form">
+                <fieldset>
+                    <legend>Account Information</legend>
+                    <label for="username">Username<span class="asterisk">*</span></label>
+                    <input type="text" id="username" name="username" required placeholder="Enter your username">
+
+                    <label for="email">Email<span class="asterisk">*</span></label>
+                    <input type="email" id="email" name="email" required placeholder="example@domain.com">
+
+                    <label for="password">Password<span class="asterisk">*</span></label>
+                    <input type="password" id="password" name="password" required placeholder="Enter your password">
+
+                    <label for="confirm-password">Confirm Password<span class="asterisk">*</span></label>
+                    <input type="password" id="confirm-password" name="confirm-password" required placeholder="Confirm your password">
+
+                    <label for="remember-me">
+                        <input type="checkbox" id="remember-me" name="remember-me" />
+                        Remember Me
+                      </label>
+                </fieldset>
+                
+                <button class="reg-btn" type="submit">Register</button>
+            </form>
+            <div id="success-message" style="display:none;">✅ Registration successful!</div>
+        </main>
+        <footer>
+            <p>&copy; Copyright 2021 BrewNex. All Rights Reserved.</p>
+            <p>Created by Shobhit &nbsp; | &nbsp; Student ID: c0959381</p>
+            <a href="mailto:info@BrewNex.com">Request Information</a>  
+        </footer>
+    </div>
+</body>
+</html>

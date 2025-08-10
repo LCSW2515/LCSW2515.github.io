@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>BrewNex Coffee Makers - Dashboard</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Francois+One&family=Roboto+Slab:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/dashboard.js" defer></script>
+</head>
+<body>
+<div class="container">
+    <header>
+        <img src="images/banner.jpeg" alt="company banner image" class="banner" />
+    </header>
+
+    <nav>
+        <a href="index.html" class="logo">
+          <img src="images/logo.png" alt="company logo" />
+        </a>
+        <ul class="nav-link">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="team.html">Team</a></li>
+          <li><a href="specials.html">Specials</a></li>
+          <li><a href="training.html">Training</a></li>
+          <li><a href="media.html">Media</a></li>
+          <li><a href="register.html">Register</a></li>
+          <li><a href="task-manager.html">Task Manager</a></li>
+          <li><a href="kanban.html">Kanban Board</a></li>
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="faqs.html">FAQs</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="menu-toggle">&#9776;</div>
+    </nav>
+
+    <main>
+        <h1>📊 BrewNex Dashboard</h1>
+        <p>Stay updated with your <span>tasks, weather,</span> and daily <span>inspiration!</span></p>
+
+        <section>
+            <h2>🌤 Today's Weather</h2>
+            <div id="weather">Loading weather...</div>
+            <div id="weather-map" style="margin:10px auto 0; height:200px; max-width:400px; border:1px solid #ccc; border-radius:6px; overflow:hidden; display:flex; justify-content:center;">
+            </div>
+            
+        </section>
+
+        <section>
+            <h2>💡 Daily Quote</h2>
+            <div id="quote">Loading quote...</div>
+        </section>
+
+        <section>
+            <h2>📋 Task Summary - Below shown tasks are yet to complete!</h2>
+            <div id="task-summary">Loading tasks...</div>
+            <div id="task-details" style="margin-top:1em;"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Copyright 2021 BrewNex. All Rights Reserved.</p>
+        <p>Created by Shobhit &nbsp; | &nbsp; Student ID: c0959381</p>
+        <a href="mailto:info@BrewNex.com">Request Information</a>
+    </footer>
+</div>
+</body>
+</html>

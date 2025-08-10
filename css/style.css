@@ -391,6 +391,16 @@ button{
     margin-top: 10px;
 }
 
+/* form button[type="submit"] {
+    margin: 0 auto;
+    display: block;
+} */
+
+.reg-btn{
+    margin: 0 auto;
+    display: block;
+}
+
 button:hover{
     background-color: green;
     border-radius: 5px;
@@ -696,4 +706,30 @@ em {
   }
   
   
+  
+
+  .kanban-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.kanban-column {
+    width: 30%;
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.kanban-task {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px 0;
+    cursor: move;
+}
+
   
